@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rhovic Gabijan | Computer Engineering Student</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: JetBrains Mono + Syne -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Devicons for tech icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Rhovic</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <span class="hamburger-icon"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certs</a></li>
+          <li class="nav-item"><a class="nav-link nav-cta" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="hero-section">
+    <!-- Animated grid background -->
+    <div class="hero-grid"></div>
+    <!-- Floating orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="container hero-content">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-7 hero-text">
+          <!-- Terminal-style label -->
+          <div class="terminal-label">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-path">~/rhovic/portfolio</span>
+          </div>
+
+          <p class="hero-greeting">Hello, World! I'm</p>
+          <h1 class="hero-name">Rhovic<br /><span class="name-highlight">Gabijan</span></h1>
+
+          <!-- Typewriter title -->
+          <div class="hero-title-wrap">
+            <span class="title-prefix">$ role = </span>
+            <span class="typewriter" id="typewriter"></span>
+            <span class="cursor-blink">|</span>
+          </div>
+
+          <p class="hero-tagline">
+            Building software solutions and exploring<br class="d-none d-md-block" />
+            engineering innovation — one commit at a time.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-neon-blue">View Projects</a>
+            <a href="#contact" class="btn btn-outline-neon">Get in Touch</a>
+          </div>
+
+          <!-- Quick stats -->
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Leadership Roles</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Code card on right -->
+        <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+          <div class="code-card">
+            <div class="code-card-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="code-card-filename">profile.py</span>
+            </div>
+            <pre class="code-card-body"><span class="c-keyword">class</span> <span class="c-class">Developer</span>:
+    <span class="c-keyword">def</span> <span class="c-fn">__init__</span>(self):
+        self.name  = <span class="c-str">"Rhovic Gabijan"</span>
+        self.role  = <span class="c-str">"CpE Student"</span>
+        self.uni   = <span class="c-str">"University of Caloocan City"</span>
+        self.langs = [
+            <span class="c-str">"Python"</span>,
+            <span class="c-str">"C++"</span>,
+            <span class="c-str">"JavaScript"</span>,
+        ]
+
+    <span class="c-keyword">def</span> <span class="c-fn">get_goals</span>(self):
+        <span class="c-keyword">return</span> [
+            <span class="c-str">"Build cool things"</span>,
+            <span class="c-str">"Solve real problems"</span>,
+            <span class="c-str">"Never stop learning"</span>,
+        ]
+
+me = <span class="c-class">Developer</span>()
+<span class="c-fn">print</span>(me.get_goals())</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 01</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="about-avatar-wrap">
+            <div class="avatar-hex">
+              <div class="avatar-inner">
+                <i class="fas fa-user-astronaut avatar-icon"></i>
+              </div>
+            </div>
+            <div class="avatar-badge">
+              <i class="fas fa-map-marker-alt"></i> Caloocan City, PH
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="about-text">
+            <p class="about-intro">
+              I'm a <span class="highlight-blue">Computer Engineering student</span> at the University of Caloocan City, passionate about creating software that makes a difference. I blend engineering fundamentals with modern programming to build practical solutions.
+            </p>
+            <p>
+              From developing <span class="highlight-purple">Python-based games</span> and <span class="highlight-green">web applications</span> to leading student organizations, I pursue every challenge with curiosity and commitment. I graduated Senior High School <em>With High Honor</em> under the STEM strand and continue to push boundaries in tech.
+            </p>
+            <p>
+              Beyond code, I enjoy research, Electronics, and giving back through leadership — currently serving as <span class="highlight-blue">Engineering Student Council President</span> and <span class="highlight-purple">Vice President for Internal Affairs</span> at ICpEP.SE UCC.
+            </p>
+
+            <div class="about-info-grid">
+              <div class="info-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <span class="info-label">Degree</span>
+                  <span class="info-val">BS Computer Engineering</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-university"></i>
+                <div>
+                  <span class="info-label">University</span>
+                  <span class="info-val">University of Caloocan City</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-calendar-alt"></i>
+                <div>
+                  <span class="info-label">Year</span>
+                  <span class="info-val">2024 – Present</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-heart"></i>
+                <div>
+                  <span class="info-label">Interests</span>
+                  <span class="info-val">Dev, Research, Leadership</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section-pad section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 02</span>
+        <h2 class="section-title">Skills & Tech Stack</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skills-group mb-5">
+        <h3 class="skills-group-title"><span class="c-keyword">soft_skills</span> = [</h3>
+        <div class="soft-skills-wrap">
+          <span class="soft-skill-tag"><i class="fas fa-users"></i> Leadership</span>
+          <span class="soft-skill-tag"><i class="fas fa-comments"></i> Communication</span>
+          <span class="soft-skill-tag"><i class="fas fa-bullseye"></i> Goal-Oriented</span>
+          <span class="soft-skill-tag"><i class="fas fa-sync-alt"></i> Adaptability</span>
+          <span class="soft-skill-tag"><i class="fas fa-puzzle-piece"></i> Problem-Solving</span>
+          <span class="soft-skill-tag"><i class="fas fa-flask"></i> Research</span>
+        </div>
+        <span class="c-keyword">]</span>
+      </div>
+
+      <!-- Tech Skills -->
+      <h3 class="skills-group-title"><span class="c-keyword">tech_stack</span> = {</h3>
+      <div class="row g-4 mt-1">
+
+        <!-- Languages -->
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fas fa-code"></i> Languages
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="devicon-python-plain colored"></i>
+                <span>Python</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="80" style="--neon: var(--blue)"></div></div>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-cplusplus-plain colored"></i>
+                <span>C++</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="30" style="--neon: var(--purple)"></div></div>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="75" style="--neon: var(--green)"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web -->
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fas fa-globe"></i> Web
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="devicon-html5-plain colored"></i>
+                <span>HTML5</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="90" style="--neon: var(--blue)"></div></div>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-css3-plain colored"></i>
+                <span>CSS3</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="90" style="--neon: var(--purple)"></div></div>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-flask-original"></i>
+                <span>Flask</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="70" style="--neon: var(--green)"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fas fa-database"></i> Database
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="devicon-sqlite-plain colored"></i>
+                <span>SQLite</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="72" style="--neon: var(--blue)"></div></div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-layer-group" style="color: var(--purple)"></i>
+                <span>SQLAlchemy</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="50" style="--neon: var(--purple)"></div></div>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-googlecloud-plain colored"></i>
+                <span>Google Sheets</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="90" style="--neon: var(--green)"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks / Tools -->
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fas fa-tools"></i> Frameworks
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fas fa-gamepad" style="color: var(--blue)"></i>
+                <span>Pygame</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="78" style="--neon: var(--blue)"></div></div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-window-maximize" style="color: var(--purple)"></i>
+                <span>PyQt / Tkinter</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="85" style="--neon: var(--purple)"></div></div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-mobile-alt" style="color: var(--green)"></i>
+                <span>Kivy</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="60" style="--neon: var(--green)"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="c-keyword mt-3 d-block">}</span>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 03</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Project 1: RPG Game -->
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" data-neon="blue">
+            <div class="project-card-top">
+              <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+              <div class="project-links">
+                <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Pyth-on-bug</h3>
+            <p class="project-subtitle">Python Debugging RPG Game</p>
+            <p class="project-desc">
+              A Python-based role-playing game designed to teach debugging concepts interactively. Players solve real code bugs as gameplay mechanics, blending education with entertainment.
+            </p>
+            <div class="project-tags">
+              <span class="tag blue">Python</span>
+              <span class="tag purple">Pygame</span>
+              <span class="tag green">Education</span>
+            </div>
+            <div class="project-meta">
+              <span><i class="fas fa-calendar"></i> 2024 – 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Food Ordering -->
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" data-neon="purple">
+            <div class="project-card-top">
+              <div class="project-icon"><i class="fas fa-utensils"></i></div>
+              <div class="project-links">
+                <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">FoodOrder Web</h3>
+            <p class="project-subtitle">Web-Based Food Ordering System</p>
+            <p class="project-desc">
+              A full-stack web application for online food ordering. Features a clean UI for customers, an admin dashboard, and database-backed order management.
+            </p>
+            <div class="project-tags">
+              <span class="tag blue">HTML/CSS/JS</span>
+              <span class="tag purple">Flask</span>
+              <span class="tag green">SQLite</span>
+            </div>
+            <div class="project-meta">
+              <span><i class="fas fa-calendar"></i> 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Research -->
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" data-neon="green">
+            <div class="project-card-top">
+              <div class="project-icon"><i class="fas fa-leaf"></i></div>
+              <div class="project-links">
+                <a href="#" class="project-link" title="View Research"><i class="fas fa-file-alt"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Dahong Panulat</h3>
+            <p class="project-subtitle">Alternative Ink Research</p>
+            <p class="project-desc">
+              Research project extracting pigment from <em>Terminalia catappa</em> (Talisay) leaves as a sustainable, eco-friendly alternative to commercial ink.
+            </p>
+            <div class="project-tags">
+              <span class="tag blue">Research</span>
+              <span class="tag purple">Sustainability</span>
+              <span class="tag green">Science</span>
+            </div>
+            <div class="project-meta">
+              <span><i class="fas fa-calendar"></i> 2023 – 2024</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE & LEADERSHIP ===== -->
+  <section id="experience" class="section-pad section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 04</span>
+        <h2 class="section-title">Experience & Leadership</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Timeline left -->
+        <div class="col-lg-6">
+          <h3 class="exp-group-title"><i class="fas fa-star"></i> Leadership</h3>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-dot blue"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2025 – Present</span>
+                <h4 class="timeline-title">President</h4>
+                <p class="timeline-org">UCC Engineering Student Council (ESC)</p>
+                <p class="timeline-desc">Leading the engineering student body, organizing events, representing student interests, and fostering academic excellence at UCC College of Engineering.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot purple"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2025 – Present</span>
+                <h4 class="timeline-title">Vice President for Internal Affairs</h4>
+                <p class="timeline-org">ICpEP.SE UCC Chapter</p>
+                <p class="timeline-desc">Managing internal operations, member relations, and organizational development for the Institute of Computer Engineers of the Philippines – Student Edition.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot green"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2024</span>
+                <h4 class="timeline-title">NSTP Leadership Award</h4>
+                <p class="timeline-org">College of Engineering Representative</p>
+                <p class="timeline-desc">Recognized for exemplary leadership and service during the National Service Training Program.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="col-lg-6">
+          <h3 class="exp-group-title"><i class="fas fa-briefcase"></i> Experience</h3>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-dot blue"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">Apr 30 – May 29, 2024</span>
+                <h4 class="timeline-title">Work Immersion</h4>
+                <p class="timeline-org">Biomedical Engineering Dept. – Dr. Jose N. Rodriguez Memorial Hospital</p>
+                <p class="timeline-desc">Gained hands-on experience in a biomedical engineering environment, learning about medical equipment and hospital technology systems.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <h3 class="exp-group-title mt-4"><i class="fas fa-trophy"></i> Achievements</h3>
+          <div class="achievements-list">
+            <div class="achievement-item">
+              <span class="achievement-badge gold"><i class="fas fa-medal"></i></span>
+              <div>
+                <span class="achievement-title">1st Place – Trade Fair</span>
+                <span class="achievement-sub">Highest Gross Income • 2023</span>
+              </div>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-badge blue"><i class="fas fa-calculator"></i></span>
+              <div>
+                <span class="achievement-title">Mathira Mathibay</span>
+                <span class="achievement-sub">Math Quiz Bee Participant • 2024</span>
+              </div>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-badge purple"><i class="fas fa-microscope"></i></span>
+              <div>
+                <span class="achievement-title">Research Proposal</span>
+                <span class="achievement-sub">Banana Peel Sustainable Plastic Alternative • 2023</span>
+              </div>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-badge green"><i class="fas fa-graduation-cap"></i></span>
+              <div>
+                <span class="achievement-title">Graduated With High Honor</span>
+                <span class="achievement-sub">STEM Strand – Immaculada Concepcion College • 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications" class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 05</span>
+        <h2 class="section-title">Certifications & Seminars</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="row g-3">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="cert-card blue">
+            <div class="cert-icon"><i class="fab fa-python"></i></div>
+            <div class="cert-info">
+              <h4>Basics of Python</h4>
+              <p>Uniathena Cambridge International Qualifications</p>
+              <span class="cert-year">2025</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="cert-card purple">
+            <div class="cert-icon"><i class="fas fa-chart-bar"></i></div>
+            <div class="cert-info">
+              <h4>Basics of Data Science</h4>
+              <p>Uniathena Cambridge International Qualifications</p>
+              <span class="cert-year">2025</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="cert-card green">
+            <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="cert-info">
+              <h4>Critical Infrastructure Protection</h4>
+              <p>OPSWAT Academy</p>
+              <span class="cert-year">2025</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="cert-card blue">
+            <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="cert-info">
+              <h4>Power BI: Exploring Data Without Coding</h4>
+              <p>ICpEP – NCR</p>
+              <span class="cert-year">2025</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="cert-card purple">
+            <div class="cert-icon"><i class="fas fa-robot"></i></div>
+            <div class="cert-info">
+              <h4>AI-Driven Approaches to Programming</h4>
+              <p>ICpEP – NCR</p>
+              <span class="cert-year">2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="cert-card green">
+            <div class="cert-icon"><i class="fas fa-lock"></i></div>
+            <div class="cert-info">
+              <h4>Cybersecurity Challenges in IoT</h4>
+              <p>ICpEP – NCR</p>
+              <span class="cert-year">2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="cert-card blue">
+            <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="cert-info">
+              <h4>Next-Gen Learning: IT, AI, Evolving Industry</h4>
+              <p>ICpEP – NCR</p>
+              <span class="cert-year">2025</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="cert-card purple">
+            <div class="cert-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="cert-info">
+              <h4>Will Vibe Coding Replace Traditional Programming?</h4>
+              <p>ICpEP – SG & SA Chapters</p>
+              <span class="cert-year">2025</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="cert-card green">
+            <div class="cert-icon"><i class="fas fa-users"></i></div>
+            <div class="cert-info">
+              <h4>CIRCLES Summit 2025</h4>
+              <p>UCC Research and Development Center</p>
+              <span class="cert-year">2025</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section-pad section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 06</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <p class="contact-intro">
+            I'm open to opportunities, collaborations, and conversations about tech, projects, or engineering. Feel free to reach out!
+          </p>
+
+          <!-- Contact cards -->
+          <div class="contact-cards">
+            <a href="https://www.facebook.com/rhovic.gabijan.3/?mibextid=ZbWKwL" target="_blank" rel="noopener" class="contact-card purple">
+              <i class="fab fa-facebook-f"></i>
+              <span class="contact-card-label">Facebook</span>
+              <span class="contact-card-val">Rhovic Gabijan</span>
+            </a>
+            <a class="contact-card blue" onclick="copyEmail()">
+              <i class="fas fa-envelope"></i>
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-val">gabijanrhovic15@gmail.com</span>
+              <span class="contact-card-val">gabijan.rhovic.mangapuro@gmail.com</span>
+            </a>
+            <a href="https://github.com/Rhovic-Gabijan" target="_blank" rel="noopener" class="contact-card green">
+              <i class="fab fa-github"></i>
+              <span class="contact-card-label">GitHub</span>
+              <span class="contact-card-val">github.com/rhovic</span>
+            </a>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-brand">&lt;Rhovic /&gt;</span>
+        <span class="footer-copy">© 2025 Rhovic M. Gabijan. Built with <span class="heart">♥</span> and lots of <span class="highlight-blue">Python</span>.</span>
+        <div class="footer-socials">
+          <a href="mailto:gabijanrhovic15@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.facebook.com/rhovic.gabijan.3/?mibextid=ZbWKwL" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://github.com/Rhovic-Gabijan" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" title="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
